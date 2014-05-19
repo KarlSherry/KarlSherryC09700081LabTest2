@@ -8,9 +8,11 @@ public class PositionSorter : MonoBehaviour {
 		this.transform.position = new Vector3 (Random.Range (-20, 20), 0, Random.Range (-20, 20));
 
 		if (this.tag == "ammo") {
-			this.renderer.material.color = Color.red;
-		} else {
-			this.renderer.material.color = Color.blue;
+						this.renderer.material.color = Color.red;
+				} else if (this.tag == "health") {
+						this.renderer.material.color = Color.green;
+				} else {
+					this.renderer.material.color = Color.blue;
 		}
 		}
 	

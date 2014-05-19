@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour {
 	int ammoNumber = 10;
 	List<GameObject> ammoList = new List<GameObject> ();
 
+	public GameObject health;
+	int healthNumber = 10;
+	List<GameObject> healthList = new List<GameObject> ();
+
 	void Start () { 
 
 		for (int i = 0; i < botNumber; i++) 
@@ -39,6 +43,12 @@ public class GameManager : MonoBehaviour {
 		{
 			GameObject ammoClone = Instantiate(ammo, transform.position, transform.rotation) as GameObject;
 			ammoList.Add (ammoClone);
+		}
+
+		for (int i = 0; i < healthNumber; i++) 
+		{
+			GameObject healthClone = Instantiate(health, transform.position, transform.rotation) as GameObject;
+			healthList.Add (healthClone);
 		}
 
 	}

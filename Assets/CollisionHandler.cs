@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CollisionHandler : MonoBehaviour {
 
+	// Script attempting to despawn the ammo on collision with a bot
+
 	public GameObject bot;
 	public float deSpawnTimer = 0.0f;
 	// Use this for initialization
